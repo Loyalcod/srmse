@@ -22,6 +22,11 @@ server.get("/",(req,res)=>{
 const AdminRouter = require('./routers/AdminRouter')
 server.use('/admin',AdminRouter)
 
+/* ----------------------------------------------------- STUDENT CLASS ROUTER CRUDE ----------------------------------------------------- */
+const studentClassRouter = require("./routers/stdClassRouter")
+server.use('/class', studentClassRouter)
+
+
 
 
 server.listen(port,()=>{
