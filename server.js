@@ -26,6 +26,10 @@ server.use('/admin',AdminRouter)
 const studentClassRouter = require("./routers/stdClassRouter")
 server.use('/class', studentClassRouter)
 
+/* -------------------------------------------------------- STUDENT ROUTER CRUDE -------------------------------------------------------- */
+const studentRouter = require("./routers/studentRouter")
+server.use("/student",studentRouter)
+
 
 
 
