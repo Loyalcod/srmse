@@ -30,6 +30,19 @@ server.use('/class', studentClassRouter)
 const studentRouter = require("./routers/studentRouter")
 server.use("/student",studentRouter)
 
+/* -------------------------------------------------------- SUBJECT ROUTER CRUDE -------------------------------------------------------- */
+const subjectRouter = require("./routers/subjectCrude")
+server.use("/subject",subjectRouter)
+
+/* --------------------------------------------------------- RESULT ROUTER CRUDE -------------------------------------------------------- */
+const resultRouter = require("./routers/resultRouter")
+server.use("/result",resultRouter)
+
+/* ---------------------------------------------- STUDENT SUBJECT COMBINATION ROUTER CRUDE ---------------------------------------------- */
+const stdSbjComboRouter = require("./routers/stdSbjComboRouter")
+server.use("/combo",stdSbjComboRouter)
+
+
 
 
 

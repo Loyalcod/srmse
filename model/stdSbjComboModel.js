@@ -6,8 +6,9 @@ const comboSchema = mongoose.Schema({
 
     status: {
         type: Boolean,
-        default: true,
+        default: true
     }
+
 },{timestamps: true})
 
 module.exports = mongoose.model('combo',comboSchema)
