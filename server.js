@@ -42,8 +42,8 @@ server.use("/result",resultRouter)
 const stdSbjComboRouter = require("./routers/stdSbjComboRouter")
 server.use("/combo",stdSbjComboRouter)
 
-
-
+const totalCountRouter = require("./routers/totalCountRouter")
+server.use("/count",totalCountRouter)
 
 
 server.listen(port,()=>{
